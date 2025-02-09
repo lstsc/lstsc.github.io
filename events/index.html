@@ -57,11 +57,11 @@
     /* 按鈕組的排版 */
     .button-group {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       gap: 10px;
-      /* 按鈕之間的間距 */
       margin-top: 10px;
-      width: 100%;
+      width: 40%;
       align-self: center;
     }
 
@@ -69,15 +69,13 @@
     .modern-button {
       display: inline-block;
       padding: 12px;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       font-weight: bold;
       text-align: center;
       text-decoration: none;
       color: white;
       background: linear-gradient(145deg, #007bff, #de007a);
-      /* 漸變色 */
       border-radius: 10px;
-      /* 圓角 */
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
     }
@@ -151,9 +149,8 @@
         <p>📍 國立政治大學 法學院演講廳 綜合院館北棟3樓</p>
 
         <div class="button-group">
-          <a class="modern-button" href="https://pay.linguist.tw/">*: 報名與繳費 ･ﾟ✧</a>
-          <a class="modern-button" href="#map">*: 交通方式 ･ﾟ✧</a>
-          <a class="modern-button" href="#map">*: 場地動線 ･ﾟ✧</a>
+          <a class="modern-button" href="https://pay.linguist.tw/">*: 報名繳費 ･ﾟ✧</a>
+          <a class="modern-button" href="#map">*: 交通動線 ･ﾟ✧</a>
         </div>
 
         <div class="divider-bar"></div>
@@ -215,6 +212,13 @@
           </p>
         </div>
 
+        <img src="images/18th_poster.jpg" alt="第18屆語言學沙龍" class="banner" style="border-radius: 10px; width: 70%; height: auto;">
+
+        <div class="divider-bar"></div>
+
+        <h2># 會議議程</h2>
+        <img src="images/18th_agenda.jpg" alt="第18屆語言學沙龍議程" style="border-radius: 10px; width: 70%; height: auto;">
+
         <div class="divider-bar"></div>
 
         <h2># 報名資訊</h2>
@@ -236,12 +240,12 @@
 
         <div class="divider-bar"></div>
 
-        <h2># 活動形式</h2>
+        <h2 id="map"># 交通動線</h2>
         <p>實體活動，地點為國立政治大學法學院演講廳 綜合院館北棟3樓。</p>
         <!-- Google Map Embed -->
+        <img src="images/動線.png" alt="國立政治大學 法學院演講廳 綜合院館北棟3樓" style="border-radius: 10px; width: 70%; height: auto;">
         <div
-          style="margin-top: 1rem; width: 100%; height: 400px; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
-          id="map">
+          style="margin-top: 1rem; width: 100%; height: 400px; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.750980105181!2d121.5710512!3d24.9865001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa7984e92447%3A0x3b9cae60f366acf5!2sColledge%20of%20Law%2C%20National%20Chengchi%20University!5e0!3m2!1sen!2stw!4v1700000000000!5m2!1sen!2stw&maptype=dark"
             width="100%" height="100%" style="border: 0;" allowfullscreen="" loading="lazy"
@@ -254,7 +258,7 @@
         <h2># 聯絡我們</h2>
         <p>如有問題，請聯繫：</p>
         <p>Email: <a href="mailto:lingstudent@gmail.com">lingstudent@gmail.com</a></p>
-        <p>Facebook: <a href="#">台灣語言學學會</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100064023912366">台灣語言學學會</a></p>
 
         <div class="divider-bar"></div>
 
