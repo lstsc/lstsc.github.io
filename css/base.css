@@ -1,0 +1,16 @@
+/* base.css */
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: var(--font-body);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* any other global element styles, e.g. links, headings, paragraphs */

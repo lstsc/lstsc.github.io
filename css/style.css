@@ -318,7 +318,7 @@ footer {
   .container {
     display: flex;
     flex-direction: column;
-    padding: 0 150px;
+    padding: 0 100px;
   }
 
   .close-btn {

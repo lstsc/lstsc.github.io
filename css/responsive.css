@@ -1,0 +1,30 @@
+/* responsive.css */
+@media (max-width: var(--bp-mobile)) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--gap);
+  }
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    transition: right var(--transition);
+    border: none;
+  }
+  .menu.active { right: 0; }
+  .hamburger,
+  .close-btn { display: block; }
+
+  .content img { width: 100%; }
+}
+
+@media (min-width: calc(var(--bp-mobile) + 1px)) {
+  .container { padding: 0 150px; }
+  .hamburger,
+  .close-btn { display: none; }
+}
