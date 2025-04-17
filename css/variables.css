@@ -1,0 +1,21 @@
+/* variables.css */
+:root {
+  /* colors */
+  --color-bg: #1c1c1c;
+  --color-text: #fff;
+  --color-accent: #818181;
+
+  /* typography */
+  --font-body: 'Roboto Condensed', Arial, sans-serif;
+
+  /* sizing */
+  --header-height: 60px;
+  --gap: 10px;
+  --radius: 15px;
+
+  /* transitions */
+  --transition: 0.3s ease;
+
+  /* breakpoints */
+  --bp-mobile: 720px;
+}
