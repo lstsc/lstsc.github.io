@@ -257,6 +257,14 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+a {
+  color: rgb(9, 118, 137);
+}
+
+a:hover {
+  color: rgb(138, 15, 134);
+}
+
 /* Responsive Design */
 @media (max-width: 720px) {
   .container {
