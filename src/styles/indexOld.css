@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "RobotoCondensed Regular";
+  src: url("../assets/fonts/RobotoCondensed-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Huninn";
+  src: url("../assets/fonts/jf-openhuninn-2.1.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+body {
+  color: white;
+  background-color: #1c1c1c;
+  font-family: 'RobotoCondensed Regular', Arial, sans-serif;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 0px;
+  gap: 20px;
+}
+
+header.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+main.main-container {
+  color: white;
+  background-color: transparent;
+  flex: 1;
+  margin: 0;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+footer {
+  color: white;
+  background-color: transparent;
+  text-align: center;
+}
+
+nav.nav-menu {
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+nav.nav-menu ul {
+  list-style: none;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav.nav-menu ul a {
+  padding: 5px 5px;
+  border-radius: 10px;
+  color: gray;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav.nav-menu ul a:hover {
+  color: white;
+  background-color: gray;
+}
+
+nav.nav-menu ul li.nav-menu-close-button {
+  display: none;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding: 5px 10px;
+}
+
+nav.nav-menu div.nav-menu-hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+@media (min-width: 721px) {
+  .body-container {
+    padding: 0 100px;
+  }
+
+  nav.nav-menu ul li.nav-menu-close-button {
+    display: none !important;
+  }
+
+  nav.nav-menu div.nav-menu-hamburger {
+    display: none !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .body-container {
+    padding: 0 10px;
+  }
+
+  nav.nav-menu {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav.nav-menu div.nav-menu-hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    z-index: 101;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  nav.nav-menu div.nav-menu-hamburger.active {
+    display: none;
+  }
+
+  nav.nav-menu ul li.nav-menu-close-button {
+    display: none;
+  }
+
+  nav.nav-menu ul li.nav-menu-close-button.active {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding: 5px 10px;
+
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  nav.nav-menu ul li.nav-menu-close-button.active:hover {
+    color: gray;
+  }
+
+  nav.nav-menu ul {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -120%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 100;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+  }
+
+  nav.nav-menu.active ul {
+    right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  nav.nav-menu ul li {
+    text-align: center;
+  }
+
+  nav.nav-menu ul li a {
+    display: block;
+    padding: 16px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-decoration: none;
+  }
+
+  nav.nav-menu ul li a:hover {
+    background-color: gray;
+    transform: translateY(-2px);
+  }
+}

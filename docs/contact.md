@@ -1,3 +1,0 @@
-- [台灣語言學學會官方網站](https://linguist.tw/)
-- [台灣語言學學會粉絲專頁](https://www.facebook.com/profile.php?id=100064023912366)
-- [Email](mailto:lingstudent@gmail.com)

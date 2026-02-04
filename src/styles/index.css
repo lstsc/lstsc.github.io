@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "RobotoCondensed Regular";
+  src: url("../assets/fonts/RobotoCondensed-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Huninn";
+  src: url("../assets/fonts/jf-openhuninn-2.1.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+body {
+  color: white;
+  background-color: #1c1c1c;
+  font-family: 'RobotoCondensed Regular', Arial, sans-serif;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 0px;
+  gap: 10px;
+}
+
+header.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+main.main-container {
+  color: white;
+  background-color: transparent;
+  flex: 1;
+  margin: 0;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+footer {
+  color: white;
+  background-color: transparent;
+  text-align: center;
+}
+
+@media (min-width: 721px) {
+  .body-container {
+    max-width: 720px;
+    width: 100%;
+    margin: 10px auto;
+    gap: 10px;
+    padding: 0;
+    height: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .body-container {
+    margin: 10px;
+    padding: 0 10px;
+  }
+}
