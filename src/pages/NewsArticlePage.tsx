@@ -128,12 +128,11 @@ const NewsArticlePage = () => {
 
     const fetchMarkdown = async () => {
       try {
-        // Fetch the markdown file from the original docs folder using yyyy-mm-dd.md
-        const filePath = `/src/docs/news/${slug}.md`;
-        const response = await fetch(filePath);
+        // Fetch from /news (located in /public/news, copied via scripts/copy-news.js)
+        const response = await fetch(`/news/${slug}.md`);
 
         if (!response.ok) {
-          throw new Error("Article not found");
+          throw new Error(`Article not found (${response.status})`);
         }
 
         const text = await response.text();
