@@ -10,4 +10,13 @@ export default defineConfig({
       },
     }),
   ],
+  optimizeDeps: {
+    include: [
+      "decap-cms-app",
+      "ajv",
+      "ajv-errors",
+      "ajv-keywords",
+      "ajv-keywords/dist/keywords"
+    ]
+  }
 })
