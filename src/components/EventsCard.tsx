@@ -13,7 +13,7 @@ const EventsCard = ({ to, children }: Props) => {
     <a
       href={to || undefined}
       style={{
-        width: "70%",
+        width: "100%",
         height: "auto",
         backgroundColor: isHovered ? "#dfa24c" : "#e9eded",
         color: isHovered ? "#fff" : "#dfa24c",
